@@ -1,14 +1,14 @@
+window.onload = () => {
+    const btn = document.getElementById('btn');
+    const texto = document.getElementById('texto');
+    const repeticiones = document.getElementById('repeticiones');
 
-const btn = document.getElementById('btn');
-const texto = document.getElementById('texto');
-const repeticiones = document.getElementById('repeticiones');
-
-btn.addEventListener('click', function(){
-    let textoValue = texto.value;
-    let repeticionesValue = repeticiones.value;
-    repeatString(textoValue, repeticionesValue);
-});
-
+    btn.addEventListener('click', function(){
+        let textoValue = texto.value;
+        let repeticionesValue = repeticiones.value;
+        repeatString(textoValue, repeticionesValue);
+    });
+}
 /**
  * Función que imprime un texto en consola n veces
  * @param {string} texto - Texto a imprimir
